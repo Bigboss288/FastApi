@@ -24,7 +24,9 @@ class Product(BaseModel):
     price:float
     quantity:int
 
-
+@app.get('/welcome')
+def welcome():
+    return {"message" : "Welcome user"},
 
 @app.get("/allproduct")
 def getAllProduct():
