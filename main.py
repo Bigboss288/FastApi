@@ -26,7 +26,7 @@ class Product(BaseModel):
 
 @app.get('/welcome')
 def welcome():
-    return {"message" : "Welcome user"},
+    return {"message" : "Welcome user"}
 
 @app.get("/allproduct")
 def getAllProduct():
